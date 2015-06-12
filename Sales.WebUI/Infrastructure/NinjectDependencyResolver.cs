@@ -1,7 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Web.Mvc;
 using Ninject;
+using Moq;
+using Sales.Domain.Abstract;
+using Sales.Domain.Entities;
 
 namespace Sales.WebUI.Infrastructure
 {
@@ -23,7 +27,13 @@ namespace Sales.WebUI.Infrastructure
         }
         private void AddBindings()
         {
-            // put bindings here
+            Mock<IProductRepository> mock = new Mock<IProductRepository>();
+            mock.Setup(m => m.Products).Returns(new List<Product> {
+                                new Product { Name = "Diasec Classic"},
+                                new Product { Name = "Diasec \"A la carte\""}
+            });
+
+            kernel.Bind<IProductRepository>().ToConstant(mock.Object);
         }
     }
 }
