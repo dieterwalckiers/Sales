@@ -16,15 +16,21 @@ namespace Sales.WebUI.Controllers
             this.repository = productRepository;
         }
 
-        // GET: Home
-        public ActionResult Index()
+        public ActionResult Index(string selectedProduct = null)
         {
-            return View();
+            Product product = (selectedProduct != null) ?
+                repository.Products.FirstOrDefault(x => x.Name == selectedProduct) :
+                repository.Products.FirstOrDefault();
+            ViewBag.SelectedProduct = product.Name;
+            return View(product);
         }
 
-        public ActionResult List()
+        public PartialViewResult OrderProcess(string selectedProduct)
         {
-            return View(repository.Products);
+            Product product = (selectedProduct != null) ?
+                repository.Products.FirstOrDefault(x => x.Name == selectedProduct) :
+                repository.Products.FirstOrDefault();
+            return PartialView(product);
         }
     }
 }

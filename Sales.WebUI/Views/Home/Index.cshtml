@@ -1,7 +1,12 @@
-﻿
+﻿@using Sales.Domain.Entities
+@model Product
+
 @{
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+Umbraco content for product: @Model.Name
 
+<div id="sales" class="col-xs-12 well well-sm">
+    @Html.Action("OrderProcess", "Home", new { selectedProduct = ViewBag.SelectedProduct })
+</div>

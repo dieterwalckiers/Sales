@@ -29,8 +29,8 @@ namespace Sales.WebUI.Infrastructure
         {
             Mock<IProductRepository> mock = new Mock<IProductRepository>();
             mock.Setup(m => m.Products).Returns(new List<Product> {
-                                new Product { Name = "Diasec Classic"},
-                                new Product { Name = "Diasec \"A la carte\""}
+                                new Product { ProductID = 1, Name = "Diasec Classic"},
+                                new Product { ProductID = 2, Name = "Diasec \"A la carte\""}
             });
 
             kernel.Bind<IProductRepository>().ToConstant(mock.Object);

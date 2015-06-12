@@ -1,0 +1,14 @@
+﻿@model IEnumerable<string>
+
+
+<div class="btn-group" role="group" aria-label="...">
+
+    @foreach (var link in Model)
+    {
+        @Html.RouteLink(link, new { controller = "Home", action = "Index", selectedProduct = link, page = 1 },
+        new {
+            @class = "btn btn-default"
+        })
+    }
+
+</div>
