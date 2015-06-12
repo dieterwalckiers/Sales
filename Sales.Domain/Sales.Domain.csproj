@@ -41,7 +41,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\IProductRepository.cs" />
+    <Compile Include="Entities\OptionCategory.cs" />
+    <Compile Include="Entities\Option.cs" />
+    <Compile Include="Entities\OptionType.cs" />
     <Compile Include="Entities\Product.cs" />
+    <Compile Include="Entities\RollSize.cs" />
+    <Compile Include="Entities\SheetSize.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

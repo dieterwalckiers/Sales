@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace Sales.Domain.Entities
 {
-    public class Product
+    public class Option
     {
-        public int ProductID { get; set; }
+        public int OptionID { get; set; }
         public string Name { get; set; }
 
-        public IEnumerable<OptionType> OptionTypes { get; set; }
+        public IEnumerable<RollSize> RollSizes { get; set; }
+        public IEnumerable<SheetSize> SheetSizes { get; set; }
     }
 }
