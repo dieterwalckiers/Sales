@@ -11,6 +11,7 @@ namespace Sales.Domain.Entities
         public int ProductID { get; set; }
         public string Name { get; set; }
 
-        public IEnumerable<OptionType> OptionTypes { get; set; }
+        public virtual ICollection<OptionType> OptionTypes { get; set; }
+
     }
 }

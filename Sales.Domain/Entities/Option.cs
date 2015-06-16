@@ -10,8 +10,11 @@ namespace Sales.Domain.Entities
     {
         public int OptionID { get; set; }
         public string Name { get; set; }
+        
+        public int OptionCategoryID { get; set; }
+        public virtual OptionCategory OptionCategory { get; set; }
 
-        public IEnumerable<RollSize> RollSizes { get; set; }
-        public IEnumerable<SheetSize> SheetSizes { get; set; }
+        public virtual ICollection<RollSize> RollSizes { get; set; }
+        public virtual ICollection<SheetSize> SheetSizes { get; set; }
     }
 }

@@ -27,3 +27,5 @@ C:\Users\dieter\Documents\GitHub\Sales\Sales.Admin\obj\Debug\Sales.Admin.dll
 C:\Users\dieter\Documents\GitHub\Sales\Sales.Admin\obj\Debug\Sales.Admin.pdb
 C:\Users\dieter\Documents\GitHub\Sales\Sales.Admin\bin\Sales.Domain.dll
 C:\Users\dieter\Documents\GitHub\Sales\Sales.Admin\bin\Sales.Domain.pdb
+C:\Users\dieter\Documents\GitHub\Sales\Sales.Admin\bin\EntityFramework.dll
+C:\Users\dieter\Documents\GitHub\Sales\Sales.Admin\bin\EntityFramework.xml

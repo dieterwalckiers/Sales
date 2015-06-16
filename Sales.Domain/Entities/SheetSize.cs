@@ -10,5 +10,8 @@ namespace Sales.Domain.Entities
     {
         public int SheetSizeID { get; set; }
         public string Name { get; set; }
+
+        public int OptionID { get; set; }
+        public virtual Option Option { get; set; }
     }
 }

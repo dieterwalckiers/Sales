@@ -3,3 +3,8 @@ C:\Users\dieter\Documents\GitHub\Sales\Sales.Domain\bin\Debug\Sales.Domain.pdb
 C:\Users\dieter\Documents\GitHub\Sales\Sales.Domain\obj\Debug\Sales.Domain.csprojResolveAssemblyReference.cache
 C:\Users\dieter\Documents\GitHub\Sales\Sales.Domain\obj\Debug\Sales.Domain.dll
 C:\Users\dieter\Documents\GitHub\Sales\Sales.Domain\obj\Debug\Sales.Domain.pdb
+C:\Users\dieter\Documents\GitHub\Sales\Sales.Domain\bin\Debug\Sales.Domain.dll.config
+C:\Users\dieter\Documents\GitHub\Sales\Sales.Domain\bin\Debug\EntityFramework.dll
+C:\Users\dieter\Documents\GitHub\Sales\Sales.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\dieter\Documents\GitHub\Sales\Sales.Domain\bin\Debug\EntityFramework.xml
+C:\Users\dieter\Documents\GitHub\Sales\Sales.Domain\bin\Debug\EntityFramework.SqlServer.xml

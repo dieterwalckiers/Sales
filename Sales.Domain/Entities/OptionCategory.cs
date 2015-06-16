@@ -8,9 +8,12 @@ namespace Sales.Domain.Entities
 {
     public class OptionCategory
     {
-        public int CategoryID { get; set; }
+        public int OptionCategoryID { get; set; }
         public string Name { get; set; }
 
-        public IEnumerable<Option> Options { get; set; }
+        public int OptionTypeID { get; set; }
+        public virtual OptionType OptionType { get; set; }
+
+        public virtual ICollection<Option> Options { get; set; }
     }
 }

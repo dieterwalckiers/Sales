@@ -30,3 +30,5 @@ C:\Users\dieter\Documents\GitHub\Sales\Sales.UnitTests\bin\Debug\System.Web.WebP
 C:\Users\dieter\Documents\GitHub\Sales\Sales.UnitTests\obj\Debug\Sales.UnitTests.csprojResolveAssemblyReference.cache
 C:\Users\dieter\Documents\GitHub\Sales\Sales.UnitTests\obj\Debug\Sales.UnitTests.dll
 C:\Users\dieter\Documents\GitHub\Sales\Sales.UnitTests\obj\Debug\Sales.UnitTests.pdb
+C:\Users\dieter\Documents\GitHub\Sales\Sales.UnitTests\bin\Debug\EntityFramework.dll
+C:\Users\dieter\Documents\GitHub\Sales\Sales.UnitTests\bin\Debug\EntityFramework.xml

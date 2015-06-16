@@ -27,3 +27,7 @@ C:\Users\dieter\Documents\GitHub\Sales\Sales.WebUI\bin\System.Web.WebPages.Razor
 C:\Users\dieter\Documents\GitHub\Sales\Sales.WebUI\obj\Release\Sales.WebUI.csprojResolveAssemblyReference.cache
 C:\Users\dieter\Documents\GitHub\Sales\Sales.WebUI\obj\Release\Sales.WebUI.dll
 C:\Users\dieter\Documents\GitHub\Sales\Sales.WebUI\obj\Release\Sales.WebUI.pdb
+C:\Users\dieter\Documents\GitHub\Sales\Sales.WebUI\bin\EntityFramework.dll
+C:\Users\dieter\Documents\GitHub\Sales\Sales.WebUI\bin\EntityFramework.SqlServer.dll
+C:\Users\dieter\Documents\GitHub\Sales\Sales.WebUI\bin\EntityFramework.xml
+C:\Users\dieter\Documents\GitHub\Sales\Sales.WebUI\bin\EntityFramework.SqlServer.xml
