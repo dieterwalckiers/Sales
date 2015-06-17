@@ -7,6 +7,8 @@ using Moq;
 using Sales.Domain.Abstract;
 using Sales.Domain.Entities;
 using Sales.Domain.Concrete;
+using Sales.WebUI.Infrastructure.Abstract;
+using Sales.WebUI.Infrastructure.Concrete;
 
 namespace Sales.WebUI.Infrastructure
 {
@@ -38,6 +40,7 @@ namespace Sales.WebUI.Infrastructure
              */
 
             kernel.Bind<IProductRepository>().To<EFProductRepository>();
+            kernel.Bind<IAuthProvider>().To<FormsAuthProvider>();
         }
     }
 }

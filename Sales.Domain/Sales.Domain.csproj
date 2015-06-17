@@ -55,6 +55,7 @@
     <Compile Include="Entities\Product.cs" />
     <Compile Include="Entities\RollSize.cs" />
     <Compile Include="Entities\SheetSize.cs" />
+    <Compile Include="Entities\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
