@@ -1,0 +1,20 @@
+﻿@using Sales.Domain.Entities
+@model IEnumerable<SheetSize>
+
+<div class="panel panel-default sizePanel">
+
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close" style="margin: 3px 6px 0 0"><span aria-hidden="true">&times;</span></button>
+
+    <div class="panel-body">
+
+        <ul>
+            @foreach (SheetSize sheetSize in Model)
+            {
+                <li style="display: block">
+                    @sheetSize.Name
+                </li>
+            }
+            <li>Add Sheet Size</li>
+        </ul>
+    </div>
+</div>

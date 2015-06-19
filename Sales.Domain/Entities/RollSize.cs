@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sales.Domain.Entities
 {
-    public class RollSize
+    public class RollSize : Size
     {
         public int RollSizeID { get; set; }
         public string Name { get; set; }

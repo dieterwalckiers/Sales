@@ -1,0 +1,15 @@
+﻿@using Sales.Domain.Entities
+@model OptionType
+
+@foreach (OptionCategory optionCategory in Model.OptionCategories)
+{
+    <h3>
+        @optionCategory.Name
+    </h3>
+    <div id="optionCategoryDiv">
+            @{
+                Html.RenderPartial("OptionCategory", optionCategory);
+            }
+    </div>
+
+}

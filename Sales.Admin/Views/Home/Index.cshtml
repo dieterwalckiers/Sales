@@ -1,8 +1,53 @@
-﻿@model Sales.Domain.Entities.Product
+﻿@using Sales.Domain.Entities
+@model IEnumerable<Product>
 
 @{
     ViewBag.Title = "Index";
 }
 
-<h2>@Model.Name</h2>
+<div class="btn-group menu" role="group" aria-label="...">
 
+    @foreach (Product product in Model)
+    {
+        @Ajax.ActionLink(product.Name, "getProductContent", "Home",
+                                                                    new
+                                                                    {
+                                                                        productId = @product.ProductID
+                                                                    },
+                                                                    new AjaxOptions
+                                                                    {
+                                                                        HttpMethod = "GET",
+                                                                        InsertionMode = InsertionMode.Replace,
+                                                                        UpdateTargetId = "productDiv"
+                                                                    },
+                                                                     new
+                                                                     {
+                                                                         @class = "btn btn-default"
+                                                                     }
+                                                                )
+
+    }
+
+    @Ajax.ActionLink("Beheer producten...", "manageProducts", "Home",
+                                                                    new AjaxOptions
+                                                                    {
+                                                                        HttpMethod = "GET",
+                                                                        InsertionMode = InsertionMode.Replace,
+                                                                        UpdateTargetId = "manageProductsDiv"
+                                                                    },
+                                                                    new
+                                                                    {
+                                                                        @class = "anchorInsideMenu"
+                                                                    }
+                                                                )
+
+
+
+
+</div>
+<div id="manageProductsDiv">
+
+</div>
+<div id="productDiv">
+
+</div>

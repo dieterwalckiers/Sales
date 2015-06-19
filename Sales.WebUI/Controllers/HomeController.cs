@@ -35,7 +35,6 @@ namespace Sales.WebUI.Controllers
            return PartialView();
         }
 
-
         public PartialViewResult OrderProcess(string selectedProduct)
         {
             Product product = (selectedProduct != null) ?
@@ -69,6 +68,9 @@ namespace Sales.WebUI.Controllers
                 return View();
             }
         }
+
+
+        
 
     }
 }

@@ -6,6 +6,7 @@ using Ninject;
 using Moq;
 using Sales.Domain.Abstract;
 using Sales.Domain.Entities;
+using Sales.Domain.Concrete;
 
 namespace Sales.Admin.Infrastructure
 {
@@ -27,13 +28,15 @@ namespace Sales.Admin.Infrastructure
         }
         private void AddBindings()
         {
+            /*
             Mock<IProductRepository> mock = new Mock<IProductRepository>();
             mock.Setup(m => m.Products).Returns(new List<Product> {
                                 new Product { ProductID = 1, Name = "Diasec Classic"},
                                 new Product { ProductID = 2, Name = "Diasec \"A la carte\""}
             });
+             */
 
-            kernel.Bind<IProductRepository>().ToConstant(mock.Object);
+            kernel.Bind<IProductRepository>().To<EFProductRepository>();
         }
     }
 }

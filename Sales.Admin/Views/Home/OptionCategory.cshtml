@@ -1,0 +1,17 @@
+﻿@using Sales.Domain.Entities
+@model OptionCategory
+
+<ul id="optionList">
+
+    @foreach (Option option in Model.Options)
+    {
+        <li>
+            @{
+        Html.RenderPartial("Option", option);
+            }
+        </li>
+
+    }
+
+</ul>
+

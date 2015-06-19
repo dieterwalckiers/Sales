@@ -1,0 +1,32 @@
+﻿@using Sales.Domain.Entities
+@model Product
+
+<div class="btn-group menu" role="group" aria-label="...">
+
+    @foreach (OptionType optionType in Model.OptionTypes)
+    {
+        @Ajax.ActionLink(optionType.Name, "getOptionTypeContent", "Home",
+                                                                    new
+                                                                    {
+                                                                        optionTypeId = @optionType.OptionTypeID
+                                                                    },
+                                                                    new AjaxOptions
+                                                                    {
+                                                                        HttpMethod = "GET",
+                                                                        InsertionMode = InsertionMode.Replace,
+                                                                        UpdateTargetId = "optionTypeDiv"
+                                                                    },
+                                                                     new
+                                                                     {
+                                                                         @class = "btn btn-default"
+                                                                     }
+                                                                )
+
+    }
+
+
+</div>
+
+<div id="optionTypeDiv">
+
+</div>

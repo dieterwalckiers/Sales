@@ -1,0 +1,53 @@
+﻿@using Sales.Domain.Entities
+@model Option
+
+<div class="panel panel-default optionDiv">
+    <div class="panel-heading">
+        <b>@Model.Name</b>
+    </div>
+    <div class="panel-body">
+       
+        @Html.ValidationSummary()
+        <div class="form-group">
+            <label>@Html.LabelFor(m => m.Name):</label>
+            @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+        </div>
+        
+
+        <ul class="nav nav-pills">
+            <li role="presentation">
+                @Ajax.ActionLink("Roll Sizes", "getRollSizeContent", "Home",
+                    new
+                    {
+                        optionId = @Model.OptionID
+                    },
+                    new AjaxOptions
+                    {
+                        HttpMethod = "GET",
+                        InsertionMode = InsertionMode.Replace,
+                        UpdateTargetId = "sizesDiv" + @Model.OptionID
+                    }
+                )
+            </li>
+            <li role="presentation">
+                @Ajax.ActionLink("Sheet Sizes", "getSheetSizeContent", "Home",
+                    new
+                    {
+                        optionId = @Model.OptionID
+                    },
+                    new AjaxOptions
+                    {
+                        HttpMethod = "GET",
+                        InsertionMode = InsertionMode.Replace,
+                        UpdateTargetId = "sizesDiv" + @Model.OptionID
+                    }
+                )
+            </li>
+        </ul>
+        <div id="sizesDiv@(@Model.OptionID)">
+            
+        </div>
+        
+    </div>
+</div>
+

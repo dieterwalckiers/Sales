@@ -13,6 +13,40 @@
 input,
 select,
 textarea {
-    max-width: 280px;
+    max-width: 315px;
 }
 
+#optionList {
+    padding-left: 0px;
+}
+
+#optionList li {
+    display: table-cell;
+    list-style-type: none;  
+}
+
+.optionDiv {
+    width: 350px;
+    margin: 5px;    
+    font-size: 8pt;
+}
+.optionDiv input {
+    font-size: 8pt;
+    height: 25px;
+}
+.optionDiv label {
+    margin-bottom: 2px;
+}
+
+.menu {
+    margin: 5px;
+}
+
+.sizePanel {
+    margin: 3px;
+}
+.anchorInsideMenu {
+    position: relative;
+    top: 5px;
+    margin-left: 5px;
+}
